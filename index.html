@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Public APIs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Free Public APIs</h1>
+    <nav>
+      <ul>
+        <li>List</li>
+        <li>Watch</li>
+        <li>Community</li>
+        <li>API</li>
+        <li>About</li>
+        <li class="right">Sponsor</li>
+        <li class="right">Add API</li>
+        <li class="right">Login</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>A collection of 407 Free Public APIs for Students and Developers.</p>
+      <small>Tested every single day.</small>
+    </section>
+
+    <section class="api-card">
+      <h2>Free Jobs API</h2>
+      <p>The Free Jobs API provides access to a comprehensive database of job listings across various industries.</p>
+      <a href="https://docs.joinrise.co/" target="_blank">📄 Documentation</a>
+      <div class="tags">
+        <span>Development</span>
+        <span>Gaming</span>
+      </div>
+
+      <h3>Endpoint</h3>
+      <code>GET https://api.joinrise.io/api/v1/jobs/public?page=1&limit=20&sort=desc&sortedBy=createdAt&jobLoc=</code>
+
+      <h4>Parameters</h4>
+      <ul>
+        <li><b>page:</b> 1</li>
+        <li><b>limit:</b> 20</li>
+        <li><b>sort:</b> desc</li>
+        <li><b>sortedBy:</b> createdAt</li>
+        <li><b>jobLoc:</b> (optional)</li>
+      </ul>
+
+      <div class="stats">
+        <p><b>Reliability:</b> 100%</p>
+        <p><b>Avg. Response Time:</b> 2428 ms</p>
+        <p><b>Error Rate:</b> 0%</p>
+        <p><b>CORS:</b> Enabled</p>
+        <p><b>Last Checked:</b> 8 hours ago</p>
+        <p><b>Added:</b> 3 months ago</p>
+      </div>
+
+      <button onclick="addComment()">Add Comment</button>
+      <button onclick="addShowcase()">Add Showcase Project</button>
+    </section>
+
+    <section class="subscribe">
+      <h3>Get Updates on the Most Useful Free Public APIs</h3>
+      <input type="email" placeholder="Your email...">
+      <button onclick="subscribe()">Subscribe</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 freepublicapis.com | <a href="#">Privacy Policy</a> | <a href="#">TOS</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
